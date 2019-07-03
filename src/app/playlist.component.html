@@ -1,0 +1,5 @@
+<li *ngIf="!deleteFlag">{{video.title}}
+    <span style="display:inline-block; width: 2%;"></span><a href="#">{{video.url}}</a>&nbsp;&nbsp;
+    <button (click)="deleteVideo()" *ngIf="!deleteFlag">Delete</button>&nbsp;
+    <button (click)="approveVideo()" [disabled]="approvedFlag">Approve</button>
+</li>&nbsp;
